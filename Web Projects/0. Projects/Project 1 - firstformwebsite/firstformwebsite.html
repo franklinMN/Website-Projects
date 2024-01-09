@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Survey Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- HEADER AND PARA-->
+
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <!-- FORM -->
+
+  <form id="survey-form">
+    <!-- enter your name -->
+
+    <label id="name-label" class="nopadd" for="name">Name: 
+      <input id="name" type="text" placeholder="Enter your Name" required />
+    </label>
+
+    <!-- enter your email -->
+
+    <label id="email-label" for="email">Email: 
+      <input id="email" type="email" placeholder="Enter your email address" required />
+    </label>
+
+    <!-- enter your age -->
+
+    <label id="number-label" for="number">Age (Optional): 
+      <input id="number" type="number" min="3" max="120" placeholder="Enter your age"/>
+    </label>
+
+    <!-- dropdown -->
+
+    <label>Which option best describes your current role?
+      <select id="dropdown" class="selectOption">
+        <option disabled selected >(select option)</option>
+        <option>Full time Learner</option>
+        <option>Full time Job</option>
+        <option>Others</option>
+      </select>
+    </label>
+
+    <!-- Rodio button -->
+
+    <label><legend>Would you recommend freeCodeCamp to a friend?</legend>
+      <label class="radio one">
+        <input value="Definitely" class="inline largerCheckbox" type="radio" name="radio-recommend" checked/> Definitely
+      </label>
+      <label class="radio">
+        <input value="May be" class="inline largerCheckbox" type="radio" name="radio-recommend" /> May be
+      </label>
+      <label class="radio">
+        <input value="Not sure" class="inline largerCheckbox" type="radio" name="radio-recommend" /> Not sure
+      </label> </label>
+
+    <!-- checkboxes -->
+
+    <label><legend>
+      What is your favorite feature of freeCodeCamp? (Check all that apply)
+      <label class="radio one "><input value="Front-end Projects" class="inline largerCheckbox" type="checkbox" />Front-end Projects</label>
+      <label class="radio"><input value="Back-end Projects" class="inline largerCheckbox" type="checkbox" />Back-end Projects</label>
+      <label class="radio"><input value="Data Visualization" class="inline largerCheckbox" type="checkbox" />Data Visualization</label>
+      <label class="radio"><input value="Challenges" class="inline largerCheckbox" type="checkbox" />Challenges</label>
+      <label class="radio"><input value="Open Source Community" class="inline largerCheckbox" type="checkbox" />Open Source Community</label>
+      <label class="radio"><input value="Gitter help rooms" class="inline largerCheckbox" type="checkbox" />Gitter help rooms</label>
+      <label class="radio"><input value="City Meetups" class="inline largerCheckbox" type="checkbox" />City Meetups</label>
+      <label class="radio"><input value="Videos" class="inline largerCheckbox" type="checkbox" />Videos</label>
+      <label class="radio"><input value="Wiki" class="inline largerCheckbox" type="checkbox" />Wiki</label>
+      <label class="radio"><input value="Forum" class="inline largerCheckbox" type="checkbox" />Forum</label>
+      <label class="radio"><input value="Additional Courses" class="inline largerCheckbox" type="checkbox" />Additional Courses</label>
+    </legend ></</label>
+
+    <!-- textarea -->
+
+    <label> Any comments or suggestions?
+      <textarea rows="4" placeholder="Enter your comment here..."></textarea>
+    </label>
+
+    <!-- submit -->
+
+    <label for="submit">
+      <input id="submit" name="Submit" value="Submit" type="submit" />
+    </label>
+  </form>
+
+
+
+</body>
+</html>
