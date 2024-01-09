@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: white;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+form{
+  margin: 0 auto;
+  /*border: 1px solid;*/
+  width: 600px;
+  max-width: 700px;
+  min-width: 400px;
+  padding: 2em;
+  border-radius: 5px;
+  background-color: rgba(38, 38, 68, 0.8);
+}
+
+label{
+  display: block;
+  margin: 2em 0;
+}
+
+.nopadd{
+  margin-top: unset;
+}
+
+.radio{
+  margin: 0.5em 0 0 0;
+}
+.one{
+  margin-top: 1em;
+}
+
+.inline {
+  width: unset;
+  margin: 0 1em 0 0;
+  vertical-align: middle;
+}
+
+/* .selectOption{
+  color: grey;
+} */
+
+input, textarea, select{
+  width: 100%;
+  margin-top: 1em;
+  padding: 0 0 0 0.5rem;
+  min-height: 2em;
+  border-radius: 5px;
+  
+  font-family: inherit;
+  font-size: 16px;
+
+}
+
+textarea{
+  padding-top: 0.5rem;
+  border-radius: unset;
+}
+
+.largerCheckbox{
+    width: 18px;
+    height: 18px;
+}
+
+h1, p{
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 50;
+  font-family: 'Calibri';
+  font-style: italic;
+  margin-top: -5px;
+  color: #eeeeee;
+  margin-bottom: 2em;
+}
+
+input[type="submit"]{
+  background-color: rgb(55,175,101) ;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  border-radius: unset;
+}
